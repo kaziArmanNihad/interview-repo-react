@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -6,8 +7,6 @@ export default function Navbar() {
   const navItems = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
-    { name: "Services", href: "/services" },
-    { name: "Projects", href: "/projects" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -62,8 +61,8 @@ export default function Navbar() {
           </ul>
 
           {/* CTA */}
-          <a
-            href="#contact"
+          <Link
+            to="/login"
             className="
               hidden rounded-xl
               border border-cyan-300/30
@@ -79,7 +78,7 @@ export default function Navbar() {
             "
           >
             Get Started
-          </a>
+          </Link>
 
           {/* Mobile Menu Button */}
           <button
