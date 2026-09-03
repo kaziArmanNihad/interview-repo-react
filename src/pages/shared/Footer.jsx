@@ -1,22 +1,26 @@
+import { BsTwitterX } from "react-icons/bs";
+import { FaLinkedin } from "react-icons/fa";
+import { FaSquareGithub } from "react-icons/fa6";
+
 export default function Footer() {
   const footerLinks = {
-    Product: [
-      { name: "Features", href: "#" },
-      { name: "Pricing", href: "#" },
-      { name: "Changelog", href: "#" },
-      { name: "Roadmap", href: "#" },
+    QuickAccess: [
+      { name: "Features", href: "/#features" },
+      { name: "Services", href: "/#services" },
+      { name: "Pricing", href: "/#pricing" },
+      { name: "Testimonials", href: "/#testimonials" },
     ],
-    Company: [
-      { name: "About", href: "#" },
-      { name: "Careers", href: "#" },
-      { name: "Blog", href: "#" },
-      { name: "Contact", href: "#" },
+    Pages: [
+      { name: "Home", href: "/home" },
+      { name: "About", href: "/about" },
+      { name: "Services", href: "/services" },
+      { name: "Contact", href: "/contact" },
     ],
     Resources: [
-      { name: "Documentation", href: "#" },
-      { name: "Help Center", href: "#" },
-      { name: "Community", href: "#" },
-      { name: "Status", href: "#" },
+      { name: "Documentation", href: "/documentation" },
+      { name: "Help Center", href: "/help-center" },
+      { name: "Community", href: "/community" },
+      { name: "Status", href: "/status" },
     ],
   };
 
@@ -49,8 +53,10 @@ export default function Footer() {
             {/* Social icons */}
             <div className="mt-6 flex gap-3">
               <a
-                href="#"
+                href="https://x.com"
                 aria-label="Twitter"
+                target="_blank"
+                title="Twitter"
                 className="
                   flex h-10 w-10 items-center justify-center
                   rounded-xl
@@ -64,12 +70,14 @@ export default function Footer() {
                   hover:text-white
                 "
               >
-                X
+                <BsTwitterX />
               </a>
 
               <a
-                href="#"
+                href="https://github.com"
                 aria-label="GitHub"
+                target="_blank"
+                title="GitHub"
                 className="
                   flex h-10 w-10 items-center justify-center
                   rounded-xl
@@ -83,12 +91,14 @@ export default function Footer() {
                   hover:text-white
                 "
               >
-                GH
+                <FaSquareGithub />
               </a>
 
               <a
-                href="#"
+                href="https://www.linkedin.com"
                 aria-label="LinkedIn"
+                title="LinkedIn"
+                target="_blank"
                 className="
                   flex h-10 w-10 items-center justify-center
                   rounded-xl
@@ -102,7 +112,7 @@ export default function Footer() {
                   hover:text-white
                 "
               >
-                in
+                <FaLinkedin />
               </a>
             </div>
           </div>
@@ -177,12 +187,13 @@ export default function Footer() {
               type="submit"
               className="
                 rounded-xl
-                bg-white
+                cursor-pointer
+                hover:bg-white
                 px-5 py-3
                 text-sm font-semibold
                 text-slate-950
                 transition
-                hover:bg-cyan-100
+                bg-cyan-100
               "
             >
               Subscribe

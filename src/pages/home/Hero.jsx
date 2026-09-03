@@ -150,11 +150,11 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-sm font-medium text-white/30">
-              <span>Acme</span>
-              <span>Vertex</span>
-              <span>Orbit</span>
-              <span>Northstar</span>
-              <span>Vercel</span>
+              <span className="hover:text-white">Acme</span>
+              <span className="hover:text-white">Vertex</span>
+              <span className="hover:text-white">Orbit</span>
+              <span className="hover:text-white">Northstar</span>
+              <span className="hover:text-white">Vercel</span>
             </div>
           </div>
         </div>
