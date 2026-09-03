@@ -1,8 +1,13 @@
+import toast from "react-hot-toast";
 import { BsTwitterX } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
 
 export default function Footer() {
+  const handleClick = () => {
+    toast.success("Coming soon!");
+  };
+
   const footerLinks = {
     QuickAccess: [
       { name: "Features", href: "/#features" },
@@ -218,17 +223,26 @@ export default function Footer() {
           </p>
 
           <div className="flex gap-6">
-            <a href="#" className="text-white/30 transition hover:text-white">
+            <p
+              className="text-white/30 transition cursor-pointer"
+              onClick={handleClick}
+            >
               Privacy
-            </a>
+            </p>
 
-            <a href="#" className="text-white/30 transition hover:text-white">
+            <p
+              className="text-white/30 transition cursor-pointer"
+              onClick={handleClick}
+            >
               Terms
-            </a>
+            </p>
 
-            <a href="#" className="text-white/30 transition hover:text-white">
+            <p
+              className="text-white/30 transition cursor-pointer"
+              onClick={handleClick}
+            >
               Cookies
-            </a>
+            </p>
           </div>
         </div>
       </div>
