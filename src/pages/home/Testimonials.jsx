@@ -1,25 +1,6 @@
-const testimonials = [
-  {
-    quote:
-      "They completely transformed how we present our brand online. The result feels premium, fast, and incredibly easy to use.",
-    name: "Alex Morgan",
-    role: "Founder, Vertex",
-  },
-  {
-    quote:
-      "The attention to detail was incredible. We launched faster than expected and immediately started seeing better engagement.",
-    name: "Sarah Chen",
-    role: "Product Lead, Orbit",
-  },
-  {
-    quote:
-      "Exactly the kind of creative and technical partner we needed. The final product exceeded our expectations.",
-    name: "Daniel Ross",
-    role: "CEO, Northstar",
-  },
-];
+import { testimonials } from "../../utils/content";
 
-export default function Testimonials() {
+function Testimonials() {
   return (
     <section id="testimonials" className="bg-slate-950 px-6 py-28">
       <div className="mx-auto max-w-6xl">
@@ -65,3 +46,5 @@ export default function Testimonials() {
     </section>
   );
 }
+
+export default Testimonials;

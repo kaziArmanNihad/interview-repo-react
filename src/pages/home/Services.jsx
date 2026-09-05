@@ -1,25 +1,6 @@
-const services = [
-  {
-    number: "01",
-    title: "Web Development",
-    description:
-      "High-performance websites and web applications built with modern technologies.",
-  },
-  {
-    number: "02",
-    title: "UI/UX Design",
-    description:
-      "Intuitive interfaces and thoughtful user experiences that turn visitors into customers.",
-  },
-  {
-    number: "03",
-    title: "Brand Identity",
-    description:
-      "Distinctive visual identities that communicate your story and make your brand recognizable.",
-  },
-];
+import { services } from "../../utils/content";
 
-export default function Services() {
+function Services() {
   return (
     <section id="services" className="relative bg-slate-950 px-6 py-28">
       <div className="mx-auto max-w-6xl">
@@ -69,3 +50,5 @@ export default function Services() {
     </section>
   );
 }
+
+export default Services;

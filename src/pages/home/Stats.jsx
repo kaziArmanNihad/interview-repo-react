@@ -1,11 +1,6 @@
-const stats = [
-  { value: "50+", label: "Projects delivered" },
-  { value: "98%", label: "Client satisfaction" },
-  { value: "5+", label: "Years experience" },
-  { value: "24/7", label: "Support available" },
-];
+import { stats } from "../../utils/content";
 
-export default function Stats() {
+function Stats() {
   return (
     <section id="status" className="bg-slate-950 px-6 py-16">
       <div
@@ -39,3 +34,5 @@ export default function Stats() {
     </section>
   );
 }
+
+export default Stats;

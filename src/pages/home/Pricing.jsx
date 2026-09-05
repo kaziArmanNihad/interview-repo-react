@@ -1,53 +1,7 @@
 import { useState } from "react";
+import { plans } from "../../utils/content";
 
-const plans = [
-  {
-    name: "Starter",
-    description: "Perfect for individuals and small projects.",
-    monthly: 19,
-    yearly: 15,
-    features: [
-      "1 Project",
-      "Basic analytics",
-      "Email support",
-      "5 GB storage",
-      "Basic integrations",
-    ],
-    popular: false,
-  },
-  {
-    name: "Pro",
-    description: "Everything you need to grow your business.",
-    monthly: 49,
-    yearly: 39,
-    features: [
-      "Unlimited projects",
-      "Advanced analytics",
-      "Priority support",
-      "50 GB storage",
-      "Advanced integrations",
-      "Custom domains",
-    ],
-    popular: true,
-  },
-  {
-    name: "Enterprise",
-    description: "Powerful solutions for larger teams.",
-    monthly: 99,
-    yearly: 79,
-    features: [
-      "Unlimited everything",
-      "Advanced security",
-      "Dedicated support",
-      "500 GB storage",
-      "Custom integrations",
-      "Team management",
-    ],
-    popular: false,
-  },
-];
-
-export default function Pricing() {
+function Pricing() {
   const [billing, setBilling] = useState("monthly");
 
   return (
@@ -268,3 +222,5 @@ export default function Pricing() {
     </section>
   );
 }
+
+export default Pricing;

@@ -35,18 +35,6 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white">
-      {/* Header */}
-      <header className="border-b border-white/10">
-        <div className="mx-auto max-w-6xl px-6 py-6">
-          <Link
-            to="/"
-            className="text-xl font-bold transition hover:opacity-80"
-          >
-            My<span className="text-cyan-300">Logo</span>
-          </Link>
-        </div>
-      </header>
-
       {/* Hero */}
       <section className="relative overflow-hidden px-6 py-24 sm:py-32">
         <div className="absolute left-1/4 top-0 h-[450px] w-[450px] rounded-full bg-cyan-500/10 blur-[140px]" />

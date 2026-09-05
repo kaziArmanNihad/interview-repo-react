@@ -1,55 +1,9 @@
 import { Link } from "react-router";
-import { FaRocket, FaUsers, FaCode, FaHeart } from "react-icons/fa";
-
-const values = [
-  {
-    icon: FaRocket,
-    title: "Innovation",
-    description:
-      "We constantly explore new ideas and technologies to create better digital experiences.",
-  },
-  {
-    icon: FaUsers,
-    title: "Collaboration",
-    description:
-      "Great products are built together. We believe in teamwork, communication, and shared ideas.",
-  },
-  {
-    icon: FaCode,
-    title: "Quality",
-    description:
-      "From design to development, we care about every detail and aim for exceptional quality.",
-  },
-  {
-    icon: FaHeart,
-    title: "People First",
-    description:
-      "Our work is ultimately about people. We build experiences that are useful, accessible, and enjoyable.",
-  },
-];
-
-const stats = [
-  { value: "50+", label: "Projects Completed" },
-  { value: "98%", label: "Client Satisfaction" },
-  { value: "5+", label: "Years Experience" },
-  { value: "24/7", label: "Support" },
-];
+import { aboutStats, aboutValues } from "../../utils/content";
 
 export default function About() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
-      {/* Header */}
-      <header className="border-b border-white/10">
-        <div className="mx-auto max-w-6xl px-6 py-6">
-          <Link
-            to="/"
-            className="text-xl font-bold transition hover:opacity-80"
-          >
-            My<span className="text-cyan-300">Logo</span>
-          </Link>
-        </div>
-      </header>
-
       {/* Hero */}
       <section className="relative overflow-hidden px-6 py-24 sm:py-32">
         {/* Background glows */}
@@ -171,7 +125,7 @@ export default function About() {
       {/* Stats */}
       <section className="border-y border-white/10 bg-white/[0.02] px-6 py-16">
         <div className="mx-auto grid max-w-6xl grid-cols-2 gap-8 md:grid-cols-4">
-          {stats.map((stat) => (
+          {aboutStats.map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="text-3xl font-bold text-white sm:text-4xl">
                 {stat.value}
@@ -200,7 +154,7 @@ export default function About() {
           </div>
 
           <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {values.map((value) => {
+            {aboutValues.map((value) => {
               const Icon = value.icon;
 
               return (

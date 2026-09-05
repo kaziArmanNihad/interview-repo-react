@@ -1,31 +1,6 @@
-const features = [
-  {
-    icon: "✦",
-    title: "Modern Design",
-    description:
-      "Clean, beautiful interfaces designed to make your product feel premium and memorable.",
-  },
-  {
-    icon: "⚡",
-    title: "Fast Performance",
-    description:
-      "Lightning-fast experiences optimized for performance, accessibility, and scalability.",
-  },
-  {
-    icon: "◈",
-    title: "Fully Responsive",
-    description:
-      "Every experience looks great across phones, tablets, laptops, and large screens.",
-  },
-  {
-    icon: "◎",
-    title: "Built to Scale",
-    description:
-      "Flexible solutions built with a strong foundation so your product can grow with you.",
-  },
-];
+import { features } from "../../utils/content";
 
-export default function Features() {
+function Features() {
   return (
     <section
       id="features"
@@ -94,3 +69,5 @@ export default function Features() {
     </section>
   );
 }
+
+export default Features;
