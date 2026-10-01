@@ -1,10 +1,10 @@
-import Hero from "./Hero.jsx";
-import Stats from "./Stats.jsx";
-import Features from "./Features.jsx";
-import Services from "./Services.jsx";
-import Pricing from "./Pricing.jsx";
-import Testimonials from "./Testimonials.jsx";
-import CTA from "./CTA.jsx";
+import Hero from "../../components/homePageComponents/Hero.jsx";
+import Stats from "../../components/homePageComponents/Stats.jsx";
+import Features from "../../components/homePageComponents/Features.jsx";
+import Services from "../../components/homePageComponents/Services.jsx";
+import Pricing from "../../components/homePageComponents/Pricing.jsx";
+import Testimonials from "../../components/homePageComponents/Testimonials.jsx";
+import CTA from "../../components/homePageComponents/CTA.jsx";
 
 function Home() {
   return (

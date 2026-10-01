@@ -1,9 +1,12 @@
 import toast from "react-hot-toast";
+import { useState } from "react";
 import { BsTwitterX } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
 
 export default function Footer() {
+  const [email, setEmail] = useState("");
+
   const handleClick = () => {
     toast.success("Coming soon!");
   };
@@ -172,34 +175,22 @@ export default function Footer() {
 
           <form className="flex w-full max-w-md gap-2">
             <input
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               type="email"
               placeholder="Enter your email"
-              className="
-                min-w-0 flex-1
-                rounded-xl
-                border border-white/10
-                bg-white/5
-                px-4 py-3
-                text-sm text-white
-                outline-none
-                placeholder:text-white/30
-                focus:border-cyan-400/50
-                focus:bg-white/10
-              "
+              className="min-w-0 flex-1 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white outline-none placeholder:text-white/30 focus:border-cyan-400/50 focus:bg-white/10"
             />
 
             <button
-              type="submit"
-              className="
-                rounded-xl
-                cursor-pointer
-                hover:bg-white
-                px-5 py-3
-                text-sm font-semibold
-                text-slate-950
-                transition
-                bg-cyan-100
-              "
+              onClick={() => {
+                if (email) {
+                  toast.success("Subscribed!");
+                  setEmail("");
+                }
+              }}
+              type="button"
+              className="rounded-xl cursor-pointer hover:bg-white px-5 py-3 text-sm font-semibold text-slate-950 transition bg-cyan-100"
             >
               Subscribe
             </button>
